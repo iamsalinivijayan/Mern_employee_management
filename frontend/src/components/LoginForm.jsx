@@ -1,7 +1,5 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Avatar } from "@mui/material";
-import { Box } from "@mui/material";
 const LoginForm = ({
   loginForm,
   setLoginForm,
@@ -39,19 +37,8 @@ const LoginForm = ({
     }
   };
   return (
-    <div>
-    <Box 
-    sx={{
-            marginTop: 10,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justify:"center"
-          }}>
-    
+    <div> 
       <h2>Login page</h2>
-    <Avatar sx={{ m: 2, bgcolor: 'limegreen', justifyitems: 'center'}}>
-    </Avatar>
       <form onSubmit={login}>
         <input
           type="text"
@@ -70,7 +57,6 @@ const LoginForm = ({
         />
         <button type="submit">Login</button>
       </form>
-      </Box>
     </div>
   );
 };
